@@ -9,4 +9,4 @@ def leader(arr,n):
     leader.reverse()
     return leader
 arr=[7,4,5,7,3]
-leader(arr,len(arr))
+print(leader(arr,len(arr)))
