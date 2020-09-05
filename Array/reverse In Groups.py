@@ -14,3 +14,18 @@ arr=[1,2,3,4,5,6,7,8]
 reverseInGroups(arr,len(arr),3)
         
     
+def reverseInGroups1(arr,n,k):
+    i=0
+    while(i<n):
+        lt=i
+        rt=min(i+k-1,n-1)
+        while(lt<rt):
+            arr[lt],arr[rt]=arr[rt],arr[lt]
+            lt+=1
+            rt-=1
+        i+=k
+    return arr
+arr=[1,2,3,4,5,6,7,8]
+reverseInGroups1(arr,len(arr),3)
+        
+    
