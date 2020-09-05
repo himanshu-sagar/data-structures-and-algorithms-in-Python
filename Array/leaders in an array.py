@@ -10,3 +10,6 @@ def leader(arr,n):
     return leader
 arr=[7,4,5,7,3]
 print(leader(arr,len(arr)))
+
+#Time complexity:O(n)
+#space complexity:O(1)
